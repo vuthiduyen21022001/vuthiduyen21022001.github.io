@@ -1,0 +1,259 @@
+body{
+    width: 958px;
+    height: 1000px;
+    margin: 0 auto;
+    background-color: gray;
+}
+#wrapper{
+    width: 100%;
+    height: 1000px;
+    background-color: red;
+    margin: 0 auto;
+}
+header{
+    height: 328px;
+    width: 100%;
+    background-color: red;
+    margin: 0;
+    background: url(../images/socbay_banner.png) no-repeat;
+    position: relative;
+}
+nav{
+    width: 100%;
+    height: 50px;
+    background-color: yellow;
+    margin: 0;
+    padding: 0;
+}
+#main-content{
+    width: 100%;
+    height: 500px;
+    background-color:green;
+}
+footer{
+    width: 100%;
+    height: 200px;
+    background-color: #ffffff;
+}
+article{
+    width: 70%;
+    height: 500px;
+     background-color: #ffffff;
+    border: 1px solid blue ;
+    float: left;
+}
+aside{
+    width: 29%;
+    height: 500px;
+    background-color: #ffffff;
+    float: left;
+    border: 1px solid blue;
+}
+#menu{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+}
+#menu>ul{
+    /* width: 100%; */
+    background-color: yellow;
+    list-style: none; 
+    /* làm mất dấu chấm đầu  */
+    text-align: center;
+
+    padding: 0;
+    margin: 0;
+}
+#menu>ul>li{
+    display: inline-block;
+    /* từ hàng dọc muốn cho hàng ngag dùng display */
+    line-height: 50px;
+    margin: 0;
+    /* line-height thiết lập chiều cao giữa các dòng. */
+    width: 18%;
+    color: #ffffff;
+}
+#menu a{
+    text-decoration: none;
+    /* text-decoration không trang chí chữ */
+     display: block;
+     /* display:block có tác dụng xác định thành phần hiển thị theo các hàng độc lập. */
+
+
+
+}
+#menu a:hover{
+    color: red;
+    background-color: #ffffff;
+}
+#menu li{
+    position: relative;
+}
+.sub-menu{
+    position: absolute;
+    background-color:yellow ;
+    display: none;
+    z-index: 1;
+    width: 77%;
+}
+.sub-menu li{
+    padding: 0;
+    display: block;
+    margin-left: -40px;
+}
+/* de vo nó hiện thị */
+#menu li:hover .sub-menu{
+    display: block;
+}
+.vmenu{
+    /* làm mất dấu chấm */
+   list-style-type: none;
+   /* background-color: gray; */
+   /* bo viền thì dùng 10px */
+
+   border-radius: 10px;
+
+   /* lề nên cho 0 hoặc 2px */
+   margin: 2px;
+   /* khoảng đệm thì nên 0 hoặc 10px */
+   padding: 10px;
+
+   border: 1px grey solid;
+
+   /* box-shadow  bóng nhòe */
+
+   box-shadow: 2px 3px grey;
+
+
+}
+.vmenu li{
+    /* dashed kiểu nét đứt */
+       border-bottom: 1px  orange dashed;
+       padding: 0;
+}
+
+.vmenu a{
+    text-decoration:none;
+    line-height: 30px;
+  background: url(../images/bullet_red.png) no-repeat 1px;
+    padding: 5px 5px 6px 40px;
+    color: red;
+
+}
+.vmenu a:hover{
+    background: url(../images/bullet_yellow.png) no-repeat 1px;
+    background-color: orange;
+    display: block;
+    font-weight: bold;
+    color: white;
+    
+}
+.col-33{
+    width: 33%;
+    height: 200px;
+    float: left;
+    margin-left: 2px;
+    /* background-color: gray; */
+}
+.product{
+    text-align: center;
+    border: 1px solid darkgray;
+    /* border-radius 1 giá trị: Cả 4 góc đều được uốn cong. */
+    border-radius: 10px;
+    margin: 1px;
+    /* position: relative trong CSS giúp Định vị trí tuyệt đối cho các thành phần */
+    position: relative;
+    padding: 1px;
+}
+.product>.image{
+    height: 200px;
+    
+
+}
+.product>.name{
+    text-align: center;
+    color: red;
+    font-size: 24px;
+    line-height: 30px;
+}
+.product>.price{
+    font-size: 30px;
+    font-weight: bold;
+    color: orange;
+    position: absolute;
+    left: 5px;
+    top: 180px;
+
+}
+.product>.icons{
+    width: 25px;
+    /* height: 120px; */
+    /* background-color: blue; */
+    /* position: absolute trong CSS có tác dụng giúp định vị trí tuyệt đối cho
+     thành phần theo thành phần bao ngoài, hoặc ít nhất là theo cửa sổ trình duyệt */
+    position: absolute;
+    top: 130px;
+    right: 10px;
+}
+.product>.new-icon{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    /* width: 50px; */
+    width: 60px;
+    
+}
+.company-infor{
+    width: 400px;
+    height: 40px;
+    background-color:#ff6a00;
+    position: absolute;
+    top:0;
+    right: 0;
+    border-bottom-left-radius: 30px;
+    /* Border :2px solid black */
+}
+.company-infor ul{
+    list-style-type: none;
+    /* list-style: none; */
+    padding: 0;
+    line-height: 40px;
+    /* text-align: center; */
+}
+
+.company-infor ul li{
+    display:inline-block;
+    width: 27%;
+    margin-left: 20px;
+}
+.company-infor ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+.card{
+    text-align: center;
+    font-size: 25px;
+}
+.card :hover{
+    color: green;
+}
+  /* warpper là vùng chọn bao quanh toàn bộ nội dung bên trong trang web */
+    /* phần này thiết kế hình ảnh  */
+     /* nav nghĩa là menu *
+     /* main content đó là phân viết nội dung bên trong */
+     /* 1000 px cộng trừ nhân chia ra nên đây còn 200px */
+      /* article là phần tử để bao bọc nội dung độc lập, 
+    nó có thể là một bài post của diễn đàn, một bài 
+    viết của trang, một bài báo, một bình luận ... hoặc
+     bất kỳ một nội dung độc lập nào. */
+     /* <aside> được hiểu như nội dung thứ cấp của 
+    phần nội dung chính của trang. <aside> thường dùng
+     để biểu diễn sidebar. Khi một <aside> sử dụng trong 
+     <article> thì nội dung trong <aside> liên quan đến <aside> */
+       /* Float sử dụng để chuyển một phần tử sang góc trái hoặc phải
+     của không gian bao quanh nó, rất cần thiết trong việc định
+      dạng bố cục trang. */
+
